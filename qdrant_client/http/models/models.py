@@ -1,6 +1,6 @@
 from datetime import datetime
 from enum import Enum
-from typing import Any, Dict, List, Optional, Union
+from typing import Any, Dict, List, Optional, Union, Tuple
 
 try:
     from typing import Literal
@@ -1658,6 +1658,7 @@ Match = Union[
 ]
 NamedVectorStruct = Union[
     NamedVector,
+    Tuple[str, List[float]],
     List[StrictFloat],
 ]
 OptimizersStatus = Union[
